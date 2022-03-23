@@ -19,24 +19,26 @@ package creational.builder;
 public class Builder {
   public static void main(String[] args) {
     { // Build Boeing747
-      AircraftBuilder builder = new Boeing747Builder();
-      Director director = new Director(builder);
+      AircraftBuilder aircraftBuilder = new Boeing747Builder();
+      Director director = new Director(aircraftBuilder);
       director.construct(false);
 
-      Aircraft aircraft = builder.getResult();
+      Aircraft aircraft = aircraftBuilder.getResult();
+      aircraft.fly();
     }
 
     { // Build F16
-      AircraftBuilder builder = new F16Builder();
-      Director director = new Director(builder);
+      AircraftBuilder aircraftBuilder = new F16Builder();
+      Director director = new Director(aircraftBuilder);
       director.construct(false);
 
-      Aircraft aircraft = builder.getResult();
+      Aircraft aircraft = aircraftBuilder.getResult();
+      aircraft.fly();
     }
   }
 }
 
-interface Aircraft {}
+interface Aircraft { default void fly() {} }
 class Boeing747 implements Aircraft {}
 class F16 implements Aircraft {}
 
