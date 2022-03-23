@@ -8,6 +8,7 @@ package creational.singleton;
 // Examples in JDK:
 // 1. java.lang.Runtime
 // 2. java.awt.Desktop
+// 3. java.nio.file.FileSystems
 // Components:
 // 1. Static field
 // 2. Private/protected constructor
@@ -15,7 +16,7 @@ package creational.singleton;
 // 4. Product
 
 // Product
-public class Singleton {
+public class SingletonPattern {
   public static void main(String[] args) {
     { // Lazy creation
       AirForceOneLazy airForceOne = AirForceOneLazy.getInstance();

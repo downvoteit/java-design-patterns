@@ -16,7 +16,7 @@ package creational.prototype;
 // 4. Client (set())
 
 // Client
-public class Prototype {
+public class PrototypePattern {
   public static void main(String[] args) {
     // Base variant
     AircraftPrototype aircraftPrototype = new F16();

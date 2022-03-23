@@ -16,7 +16,7 @@ package creational.builder;
 // 4. Product (construct())
 
 // Product
-public class Builder {
+public class BuilderPattern {
   public static void main(String[] args) {
     { // Build Boeing747
       AircraftBuilder aircraftBuilder = new Boeing747Builder();

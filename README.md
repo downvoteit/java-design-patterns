@@ -14,5 +14,9 @@
 ## Categories
 
 - Creational patterns
+  - Builder
+  - Singleton
+  - Prototype
+  - Factory Method
 - Behavioral patterns
 - Structural patterns
