@@ -1,7 +1,7 @@
 package creational.builder;
 
 // Builder pattern:
-// 1. Creates object in multiple steps (abstract factory creates in one go)
+// 1. Creates a new object in multiple steps (abstract factory creates in one go)
 // 2. Hides and decouples object creation from its representation
 // 3. Allows to reuse the same construction process
 // 4. Antidote for telescoping constructors
@@ -76,7 +76,6 @@ class F16Builder extends AircraftBuilder {
 class Director {
   private final AircraftBuilder aircraftBuilder;
   public Director(AircraftBuilder aircraftBuilder) { this.aircraftBuilder = aircraftBuilder; }
-
   public void construct(boolean isPassenger) {
     aircraftBuilder.buildEngine();
     aircraftBuilder.buildCockpit();

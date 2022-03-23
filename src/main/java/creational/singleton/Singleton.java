@@ -41,7 +41,6 @@ class AirForceOneLazy {
   private static AirForceOneLazy instance;
   private AirForceOneLazy() {}
   public void fly() {}
-
   public static AirForceOneLazy getInstance() {
     if (instance == null) instance = new AirForceOneLazy();
     return instance;
@@ -53,7 +52,6 @@ class AirForceOneEager {
   private static final AirForceOneEager instance = new AirForceOneEager();
   private AirForceOneEager() {}
   public void fly() {}
-
   public static AirForceOneEager getInstance() {
     return instance;
   }
@@ -64,8 +62,7 @@ class AirForceOneSynchronized {
   private static AirForceOneSynchronized instance;
   private AirForceOneSynchronized() {}
   public void fly() {}
-
-  public synchronized static  AirForceOneSynchronized getInstance() {
+  public synchronized static AirForceOneSynchronized getInstance() {
     if (instance == null) instance = new AirForceOneSynchronized();
     return instance;
   }
@@ -76,7 +73,6 @@ class AirForceOneDoubleCheckedLocking {
   private volatile static AirForceOneDoubleCheckedLocking instance;
   private AirForceOneDoubleCheckedLocking() {}
   public void fly() {}
-
   public static AirForceOneDoubleCheckedLocking getInstance() {
     if (instance == null)
       synchronized (AirForceOneDoubleCheckedLocking.class) {
