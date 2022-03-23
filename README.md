@@ -16,4 +16,3 @@
 - Creational patterns
 - Behavioral patterns
 - Structural patterns
-"# java-design-patterns" 
