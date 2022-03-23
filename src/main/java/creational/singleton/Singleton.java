@@ -19,25 +19,18 @@ public class Singleton {
   public static void main(String[] args) {
     { // Lazy creation
       AirForceOneLazy airForceOne = AirForceOneLazy.getInstance();
-
       airForceOne.fly();
     }
-
     { // Eager creation
       AirForceOneEager airForceOne = AirForceOneEager.getInstance();
-
       airForceOne.fly();
     }
-
     { // Synchronized static factory method
       AirForceOneSynchronized airForceOne = AirForceOneSynchronized.getInstance();
-
       airForceOne.fly();
     }
-
     { // Synchronized static factory method
       AirForceOneDoubleCheckedLocking airForceOne = AirForceOneDoubleCheckedLocking.getInstance();
-
       airForceOne.fly();
     }
   }

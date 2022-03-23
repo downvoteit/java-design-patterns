@@ -26,7 +26,6 @@ public class Builder {
       Aircraft aircraft = aircraftBuilder.getResult();
       aircraft.fly();
     }
-
     { // Build F16
       AircraftBuilder aircraftBuilder = new F16Builder();
       Director director = new Director(aircraftBuilder);
