@@ -1,23 +1,26 @@
 package creational.factorymethod;
 
 // Factory Method pattern:
-// 1. Facilitates coding by abstraction and loose coupling
-// 2. Provides interface for object creation but delegates actual instantiation to subclasses
-// 3. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
-// 4. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
-// 5. Creation of the right object is the responsibility of the subclasses
-// 6. Can produce varying products through inheritance as opposed to the simple factory
-// 7. Prone to producing too many subclasses with minor differences
-// 8. Superclass downcast can cause ClassCastException in runtime
-// Examples in JDK:
-// 1. java.util.Calendar.getInstance()
-// 2. java.util.ResourceBundle.getBundle()
-// 3. java.text.NumberFormat.getInstance()
+// 1. Allows an interface to a single product without specifying concrete classes
+// 2. Facilitates coding by abstraction and loose coupling
+// 3. Provides interface for object creation but delegates actual instantiation to subclasses
+// 4. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
+// 5. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
+// 6. Creation of the right object is the responsibility of the subclasses
+// 7. Can produce varying products through inheritance as opposed to the simple factory
+// 8. Prone to producing too many subclasses with minor differences
+// 9. Superclass downcast can cause ClassCastException in runtime
+
 // Components:
 // 1. Creator (factoryMethod())
 // 2. Concrete Creator (factoryMethod())
 // 3. Product
 // 4. Concrete Product
+
+// Examples in JDK:
+// 1. java.util.Calendar.getInstance()
+// 2. java.util.ResourceBundle.getBundle()
+// 3. java.text.NumberFormat.getInstance()
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,20 +49,24 @@ public class FactoryMethodPattern {
 // Product
 interface F16Engine {}
 interface F16Cockpit {}
+interface F16Wings {}
 
 // Concrete Product
 class F16EngineConcrete implements F16Engine {}
 class F16EngineAConcrete implements F16Engine {}
 class F16EngineBConcrete implements F16Engine {}
 class F16CockpitConcrete implements F16Cockpit {}
+class F16WingsConcrete implements F16Wings {}
 
 // Tight coupling
 class F16Naive {
   private F16EngineConcrete engine; // concrete implementation
   private F16CockpitConcrete cockpit; // concrete implementation
+  private F16WingsConcrete wings; // concrete implementation
   protected void makeF16() {
     this.engine = new F16EngineConcrete();
     this.cockpit = new F16CockpitConcrete();
+    this.wings = new F16WingsConcrete();
   }
   public void fly() { makeF16(); }
 }
@@ -85,9 +92,11 @@ class F16SimpleFactory {
 class F16Abstracted {
   protected F16Engine engine; // abstraction
   protected F16Cockpit cockpit; // abstraction
+  protected F16Wings wings; // abstraction
   protected F16Abstracted makeF16() { // factory method
     engine = new F16EngineConcrete();
     cockpit = new F16CockpitConcrete();
+    wings = new F16WingsConcrete();
     return this;
   }
   public void fly() { F16Abstracted f16 = makeF16(); }

@@ -5,15 +5,17 @@ package creational.builder;
 // 2. Hides and decouples object creation from its representation
 // 3. Allows to reuse the same construction process
 // 4. Antidote for telescoping constructors
-// Examples in JDK:
-// 1. java.lang.StringBuilder
-// 2. java.util.stream.Stream
-// 3. java.util.Locale
+
 // Components:
 // 1. Builder (build())
 // 2. Concrete Builder (build(), getResult())
 // 3. Director (construct())
 // 4. Product (construct())
+
+// Examples in JDK:
+// 1. java.lang.StringBuilder
+// 2. java.util.stream.Stream
+// 3. java.util.Locale
 
 // Product
 public class BuilderPattern {

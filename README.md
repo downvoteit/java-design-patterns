@@ -9,7 +9,7 @@
 - Educative Software Design Patterns: Best Practices for Software Developers
   - https://www.educative.io/courses/software-design-patterns-best-practices
 - Head First Design Patterns 2nd Ed
-  - By Freeman E. et al 
+  - By Freeman E. et al. 
 
 ## Categories
 
@@ -22,5 +22,7 @@
     - [F16 engine substitution example](src/main/java/creational/prototype/PrototypePattern.java)
   - Factory Method
     - [F16 engine substitution example](src/main/java/creational/factorymethod/FactoryMethodPattern.java)
+  - Abstract Factory
+    - [F16 simulation software example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
 - Behavioral patterns
 - Structural patterns

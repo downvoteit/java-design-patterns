@@ -5,15 +5,17 @@ package creational.singleton;
 // 2. Ensures that a global point of access exists
 // 3. Can be eagerly or lazily created, synchronized or double-checked locked
 // 4. Enums are singletons by design
-// Examples in JDK:
-// 1. java.lang.Runtime
-// 2. java.awt.Desktop
-// 3. java.nio.file.FileSystems
+
 // Components:
 // 1. Static field
 // 2. Private/protected constructor
 // 3. Static factory method
 // 4. Product
+
+// Examples in JDK:
+// 1. java.lang.Runtime
+// 2. java.awt.Desktop
+// 3. java.nio.file.FileSystems
 
 // Product
 public class SingletonPattern {

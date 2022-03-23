@@ -7,13 +7,15 @@ package creational.prototype;
 // 4. Reduces the number of classes by cloning with different values from the model
 // 5. Cloning can be shallow (some value sharing) or deep (no value sharing)
 // 6. Prone to circular dependency
-// Examples in JDK:
-// 1. java.lang.Cloneable
+
 // Components:
 // 1. Prototype (clone())
 // 2. Concrete Prototype (clone())
 // 3. Variables (subclasses/subtypes)
 // 4. Client (set())
+
+// Examples in JDK:
+// 1. java.lang.Cloneable
 
 // Client
 public class PrototypePattern {
