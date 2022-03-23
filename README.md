@@ -15,8 +15,12 @@
 
 - Creational patterns
   - Builder
+    - [Boeing 747 and F16 build example](src/main/java/creational/builder/BuilderPattern.java)
   - Singleton
+    - [Air Force One example](src/main/java/creational/singleton/SingletonPattern.java)
   - Prototype
+    - [F16 engine substitution example](src/main/java/creational/prototype/PrototypePattern.java)
   - Factory Method
+    - [F16 engine substitution example](src/main/java/creational/factorymethod/FactoryMethodPattern.java)
 - Behavioral patterns
 - Structural patterns
