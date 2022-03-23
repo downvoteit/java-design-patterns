@@ -23,6 +23,6 @@
   - Factory Method
     - [F16 engine substitution example](src/main/java/creational/factorymethod/FactoryMethodPattern.java)
   - Abstract Factory
-    - [F16 simulation software example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
+    - [F16 engine substitution and simulation example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
 - Behavioral patterns
 - Structural patterns
