@@ -1,6 +1,8 @@
 package creational.factorymethod;
 
-// Factory Method pattern:
+// Factory Method pattern
+
+// Details
 // 1. Allows an interface to a single product without specifying concrete classes
 // 2. Facilitates coding by abstraction and loose coupling
 // 3. Provides interface for object creation but delegates actual instantiation to subclasses
@@ -11,16 +13,16 @@ package creational.factorymethod;
 // 8. Prone to producing too many subclasses with minor differences
 // 9. Superclass downcast can cause ClassCastException in runtime
 
-// Components:
+// Components
 // 1. Creator (factoryMethod())
 // 2. Concrete Creator (factoryMethod())
 // 3. Product
 // 4. Concrete Product
 
-// Implementations:
+// Implementations
 // 1. Extend the superclass and update fields
 
-// Examples in JDK:
+// Examples in JDK
 // 1. java.util.Calendar.getInstance()
 // 2. java.util.ResourceBundle.getBundle()
 // 3. java.text.NumberFormat.getInstance()

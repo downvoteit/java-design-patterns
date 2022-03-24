@@ -1,24 +1,26 @@
 package creational.singleton;
 
-// Singleton pattern:
+// Singleton pattern
+
+// Details
 // 1. Ensures that only one instance of a class exists
 // 2. Ensures that a global point of access exists
 // 3. Can be eagerly or lazily created, synchronized or double-checked locked
 // 4. Enums are singletons by design
 
-// Components:
+// Components
 // 1. Static field
 // 2. Private/protected constructor
 // 3. Static factory method
 // 4. Product
 
-// Implementations:
+// Implementations
 // 1. Lazy creation
 // 2. Synchronized lazy creation
 // 3. Double-checked locked lazy creation (conditionally synchronized)
 // 3. Eager creation
 
-// Examples in JDK:
+// Examples in JDK
 // 1. java.lang.Runtime
 // 2. java.awt.Desktop
 // 3. java.nio.file.FileSystems

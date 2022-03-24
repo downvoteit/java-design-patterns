@@ -1,22 +1,24 @@
 package creational.abstractfactory;
 
-// Abstract Factory pattern:
+// Abstract Factory pattern
+
+// Details
 // 1. Allows an interface to create a family of related products without specifying concrete classes
 // 2. Can produce varying products through object composition as opposed to inheritance
 // 3. Best represented by a singleton object
 // 4. A factory of factories that is easily extensible and flexible
 
-// Components:
+// Components
 // 1. Abstract Factory
 // 2. Concrete Factory
 // 3. Abstract Product
 // 4. Concrete Product
 // 5. Client
 
-// Implementations:
+// Implementations
 // 1. Implement an abstract type to make a concrete factory (factory of factories) then pass it to the client
 
-// Examples in JDK:
+// Examples in JDK
 // 1. javax.xml.parsers.DocumentBuilderFactory.newInstance()
 // 2. javax.xml.transform.TransformerFactory.newInstance()
 
@@ -111,7 +113,7 @@ class F16AbstractedFactory {
 }
 
 // 1. Abstract Factory
-// Returns abstract implementations
+// Abstract and returns abstract implementations
 interface AircraftFactory {
   Engine createEngine();
   Cockpit createCockpit();

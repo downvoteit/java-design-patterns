@@ -26,3 +26,6 @@
     - [F16 engine substitution and simulation example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
 - Behavioral patterns
 - Structural patterns
+  - Observer
+    - [Air-traffic controller (push model) example](src/main/java/behavioral/observer/push/ObserverPattern.java)
+    - [Air-traffic controller (pull model) example](src/main/java/behavioral/observer/pull/ObserverPattern.java)
