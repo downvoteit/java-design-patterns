@@ -27,7 +27,7 @@ package behavioral.observer.push;
 import java.util.ArrayList;
 import java.util.List;
 
-// Client
+// 5. Client
 public class ObserverPattern {
   public static void main(String[] args) {
     ControlTower controlTower = new ControlTower();
