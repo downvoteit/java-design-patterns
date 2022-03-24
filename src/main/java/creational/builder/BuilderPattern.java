@@ -21,7 +21,7 @@ package creational.builder;
 // 2. java.util.stream.Stream
 // 3. java.util.Locale
 
-// Product
+// 4. Product
 public class BuilderPattern {
   public static void main(String[] args) {
     { // Build Boeing747
@@ -47,7 +47,7 @@ interface Aircraft { default void fly() {} }
 class Boeing747 implements Aircraft {}
 class F16 implements Aircraft {}
 
-// Builder
+// 1. Builder
 abstract class AircraftBuilder {
   public void buildEngine() {}
   public void buildWings() {}
@@ -56,7 +56,7 @@ abstract class AircraftBuilder {
   public abstract Aircraft getResult();
 }
 
-// Concrete Builder
+// 2. Concrete Builder
 class Boeing747Builder extends AircraftBuilder {
   private final Boeing747 aircraft;
   public Boeing747Builder() { aircraft = new Boeing747(); }
@@ -67,7 +67,7 @@ class Boeing747Builder extends AircraftBuilder {
   @Override public Boeing747 getResult() { return aircraft; }
 }
 
-// Concrete Builder
+// 2. Concrete Builder
 class F16Builder extends AircraftBuilder {
   private final F16 aircraft;
   public F16Builder() { aircraft = new F16(); }
@@ -78,7 +78,7 @@ class F16Builder extends AircraftBuilder {
   @Override public F16 getResult() { return aircraft; }
 }
 
-// Director
+// 3. Director
 class Director {
   private final AircraftBuilder aircraftBuilder;
   public Director(AircraftBuilder aircraftBuilder) { this.aircraftBuilder = aircraftBuilder; }

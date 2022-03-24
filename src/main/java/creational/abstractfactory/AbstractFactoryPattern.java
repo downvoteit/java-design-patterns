@@ -23,7 +23,7 @@ package creational.abstractfactory;
 import java.util.ArrayList;
 import java.util.List;
 
-// Client
+// 5. Client
 public class AbstractFactoryPattern {
   public static void main(String[] args) {
     { // Naive creation
@@ -66,12 +66,12 @@ class F16Naive {
   }
 }
 
-// Abstract Product
+// 3. Abstract Product
 interface Engine { void start(); }
 interface Cockpit { }
 interface Wings { }
 
-// Concrete Product
+// 4. Concrete Product
 class F16Engine implements Engine { @Override public void start() {} }
 class F16Cockpit implements Cockpit { }
 class F16Wings implements Wings { }
@@ -110,7 +110,7 @@ class F16AbstractedFactory {
   }
 }
 
-// Abstract Factory
+// 1. Abstract Factory
 // Returns abstract implementations
 interface AircraftFactory {
   Engine createEngine();
@@ -118,7 +118,7 @@ interface AircraftFactory {
   Wings createWings();
 }
 
-// Concrete Factory
+// 2. Concrete Factory
 class F16AbstractFactory implements AircraftFactory {
   @Override public Engine createEngine() { return new F16Engine(); }
   @Override  public Cockpit createCockpit() { return new F16Cockpit(); }
@@ -131,6 +131,7 @@ class Boeing747AbstractFactory implements AircraftFactory {
   @Override public Wings createWings() { return new F16Wings(); }
 }
 
+// 5. Client (end-user of the factory)
 class Aircraft {
   private final AircraftFactory factory;
   private Engine engine;

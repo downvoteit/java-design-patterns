@@ -16,12 +16,12 @@ package creational.prototype;
 
 // Implementations:
 // 1. Shallow copy clone method
-// 1. Deep copy clone method
+// 2. Deep copy clone method
 
 // Examples in JDK:
 // 1. java.lang.Cloneable
 
-// Client
+// 4. Client
 public class PrototypePattern {
   public static void main(String[] args) {
     // Base variant
@@ -35,19 +35,19 @@ public class PrototypePattern {
   }
 }
 
-// Variables
+// 3. Variables
 class F16Engine {}
 class F16AEngine extends F16Engine {}
 class F16BEngine extends F16Engine {}
 
-// Prototype
+// 1. Prototype
 interface AircraftPrototype {
   void fly();
   AircraftPrototype clone();
   void setEngine(F16Engine f16Engine);
 }
 
-// Concrete Prototype
+// 2. Concrete Prototype
 class F16 implements AircraftPrototype {
   private F16Engine f16Engine = new F16Engine();
   @Override public void fly() {}

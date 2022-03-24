@@ -23,7 +23,7 @@ package creational.singleton;
 // 2. java.awt.Desktop
 // 3. java.nio.file.FileSystems
 
-// Product
+// 4. Product
 public class SingletonPattern {
   public static void main(String[] args) {
     { // Lazy creation
@@ -47,10 +47,10 @@ public class SingletonPattern {
 
 // Static field, private/protected constructor, static factory method
 class AirForceOneLazy {
-  private static AirForceOneLazy instance;
-  private AirForceOneLazy() {}
+  private static AirForceOneLazy instance; // 1
+  private AirForceOneLazy() {} // 2
   public void fly() {}
-  public static AirForceOneLazy getInstance() {
+  public static AirForceOneLazy getInstance() { // 3
     if (instance == null) instance = new AirForceOneLazy();
     return instance;
   }

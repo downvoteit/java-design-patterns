@@ -49,12 +49,12 @@ public class FactoryMethodPattern {
   }
 }
 
-// Product
+// 3. Product
 interface F16Engine {}
 interface F16Cockpit {}
 interface F16Wings {}
 
-// Concrete Product
+// 4. Concrete Product
 class F16EngineConcrete implements F16Engine {}
 class F16EngineAConcrete implements F16Engine {}
 class F16EngineBConcrete implements F16Engine {}
@@ -91,7 +91,7 @@ class F16SimpleFactory {
   }
 }
 
-// Creator
+// 1. Creator
 class F16Abstracted {
   protected F16Engine engine; // abstraction
   protected F16Cockpit cockpit; // abstraction
@@ -105,7 +105,7 @@ class F16Abstracted {
   public void fly() { F16Abstracted f16 = makeF16(); }
 }
 
-// Concrete Creator
+// 2. Concrete Creator
 class F16AVariantAbstracted extends F16Abstracted {
   @Override
   public F16Abstracted makeF16() { // factory method
@@ -115,7 +115,7 @@ class F16AVariantAbstracted extends F16Abstracted {
   }
 }
 
-// Concrete Creator
+// 2. Concrete Creator
 class F16BVariantAbstracted extends F16Abstracted {
   @Override
   public F16Abstracted makeF16() { // factory method
