@@ -12,6 +12,10 @@ package creational.builder;
 // 3. Director (construct())
 // 4. Product (construct())
 
+// Implementations:
+// 1. With a director
+// 2. Without a director
+
 // Examples in JDK:
 // 1. java.lang.StringBuilder
 // 2. java.util.stream.Stream

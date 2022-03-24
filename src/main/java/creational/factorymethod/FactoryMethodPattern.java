@@ -17,6 +17,9 @@ package creational.factorymethod;
 // 3. Product
 // 4. Concrete Product
 
+// Implementations:
+// 1. Extend the superclass and update fields
+
 // Examples in JDK:
 // 1. java.util.Calendar.getInstance()
 // 2. java.util.ResourceBundle.getBundle()

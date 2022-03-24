@@ -13,6 +13,9 @@ package creational.abstractfactory;
 // 4. Concrete Product
 // 5. Client
 
+// Implementations:
+// 1. Implement an abstract type to make a concrete factory (factory of factories) then pass it to the client
+
 // Examples in JDK:
 // 1. javax.xml.parsers.DocumentBuilderFactory.newInstance()
 // 2. javax.xml.transform.TransformerFactory.newInstance()

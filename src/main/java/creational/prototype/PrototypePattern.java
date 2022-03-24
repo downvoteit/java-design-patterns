@@ -14,6 +14,10 @@ package creational.prototype;
 // 3. Variables (subclasses/subtypes)
 // 4. Client (set())
 
+// Implementations:
+// 1. Shallow copy clone method
+// 1. Deep copy clone method
+
 // Examples in JDK:
 // 1. java.lang.Cloneable
 

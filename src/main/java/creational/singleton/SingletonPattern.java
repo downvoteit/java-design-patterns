@@ -12,6 +12,12 @@ package creational.singleton;
 // 3. Static factory method
 // 4. Product
 
+// Implementations:
+// 1. Lazy creation
+// 2. Synchronized lazy creation
+// 3. Double-checked locked lazy creation (conditionally synchronized)
+// 3. Eager creation
+
 // Examples in JDK:
 // 1. java.lang.Runtime
 // 2. java.awt.Desktop
@@ -32,7 +38,7 @@ public class SingletonPattern {
       AirForceOneSynchronized airForceOne = AirForceOneSynchronized.getInstance();
       airForceOne.fly();
     }
-    { // Synchronized static factory method
+    { // Conditionally synchronized static factory method
       AirForceOneDoubleCheckedLocking airForceOne = AirForceOneDoubleCheckedLocking.getInstance();
       airForceOne.fly();
     }
