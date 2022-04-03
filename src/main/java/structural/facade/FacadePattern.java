@@ -23,6 +23,7 @@ package structural.facade;
 // 1. javax.faces.context.FacesContext
 // 2. javax.faces.context.ExternalContext
 
+// 3. Client
 public class FacadePattern {
   public static void main(String[] args) {
     // Subsystems
@@ -37,6 +38,7 @@ public class FacadePattern {
   }
 }
 
+// 2. Subsystem classes
 class AltitudeMonitor {
   public void autoMonitor() {};
   public void disable() {};
@@ -47,14 +49,14 @@ class EngineController {
   public void disable() {};
 }
 
-class FuelMonitor {
-}
+class FuelMonitor {}
 
 class NavigationSystem {
   public void setDirectionBasedOnSpeedAndFuel(AltitudeMonitor altitudeMonitor, FuelMonitor fuelMonitor, EngineController engineController) {};
   public void disable() {};
 }
 
+// 1. Facade
 class AutopilotFacade {
   private final AltitudeMonitor altitudeMonitor;
   private final EngineController engineController;
