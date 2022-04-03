@@ -3,15 +3,14 @@ package creational.factorymethod;
 // Factory Method pattern
 
 // Details
-// 1. Allows an interface to a single product without specifying concrete classes
+// 1. Provides interface for object creation but delegates actual instantiation to subclasses
 // 2. Facilitates coding by abstraction and loose coupling
-// 3. Provides interface for object creation but delegates actual instantiation to subclasses
-// 4. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
-// 5. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
-// 6. Creation of the right object is the responsibility of the subclasses
-// 7. Can produce varying products through inheritance as opposed to the simple factory
-// 8. Prone to producing too many subclasses with minor differences
-// 9. Superclass downcast can cause ClassCastException in runtime
+// 3. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
+// 4. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
+// 5. Creation of the right object is the responsibility of the subclasses
+// 6. Can produce varying products through inheritance as opposed to the simple factory
+// 7. Prone to producing too many subclasses with minor differences
+// 8. Superclass downcast can cause ClassCastException in runtime
 
 // Components
 // 1. Creator (factoryMethod())
