@@ -49,14 +49,14 @@ abstract class AbstractCorollaImpl {
   abstract boolean isCardRightHanded();
 }
 
-// Implementor
+// 3. Implementor
 class CorollaModelL extends AbstractCorolla {
   public CorollaModelL(AbstractCorollaImpl abstractCorollaImpl) { super(abstractCorollaImpl); }
   @Override void listSafetyEquipment() { abstractCorollaImpl.listSafetyEquipment(); }
   @Override boolean isCardRightHanded() { return abstractCorollaImpl.isCardRightHanded(); }
 }
 
-// Concrete Implementor
+// 4. Concrete Implementor
 class CorollaModelLAsia extends AbstractCorollaImpl {
   @Override void listSafetyEquipment() { System.out.println("Low safe standards"); }
   @Override boolean isCardRightHanded() { return false; }
