@@ -26,8 +26,9 @@
     - [F16 engine substitution and simulation example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
 - Structural patterns (control class composition)
   - Adapter
-    - [Aircraft software (Aircraft to HotAirBallon adapter) example](src/main/java/structural/adapter/AdapterPattern.java)
+    - [Aircraft software (Aircraft to HotAirBalloon adapter) example](src/main/java/structural/adapter/AdapterPattern.java)
   - Bridge
+    - [Toyota car sales software example](src/main/java/structural/bridge/BridgePattern.java)
   - Composite
   - Decorator
   - Facade
