@@ -40,7 +40,7 @@ interface Aircraft {
   void land();
 }
 
-// Concrete Component
+// 2. Concrete Component
 class Boeing747 implements Aircraft {
   @Override public float getBaseWeight() { return baseWeight; }
   @Override public void fly() {}
