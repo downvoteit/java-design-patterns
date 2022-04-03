@@ -32,7 +32,6 @@ public class AdapterPattern {
     // HotAirBalloon class is now compatible with Aircraft interface
     HotAirBalloon hotAirBalloon = new HotAirBalloon();
     Adapter hotAirBalloonAdapter = new Adapter(hotAirBalloon);
-
     hotAirBalloonAdapter.fly();
   }
 }
