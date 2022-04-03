@@ -25,6 +25,9 @@ package creational.singleton;
 // 2. java.awt.Desktop
 // 3. java.nio.file.FileSystems
 
+// Examples in Spring Framework
+// 1. One Spring Bean per Spring IoC container (application context)
+
 // 4. Product
 public class SingletonPattern {
   public static void main(String[] args) {

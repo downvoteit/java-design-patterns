@@ -2,12 +2,14 @@
 
 ## Purpose
 
-- Learn design patterns and where they are applied in JDK
+- Learn design patterns and where they are applied in JDK and Spring Framework
 
 ## Learning resources
 
 - Educative Software Design Patterns: Best Practices for Software Developers
   - https://www.educative.io/courses/software-design-patterns-best-practices
+- Baeldung articles on Spring Framework Design Patterns
+  - https://www.baeldung.com/spring-framework-design-patterns
 - Head First Design Patterns 2nd Ed
   - By Freeman E. et al.
 
@@ -30,12 +32,15 @@
   - Bridge
     - [Toyota car sales software example](src/main/java/structural/bridge/BridgePattern.java)
   - Composite
+    - [NATO Air force example](src/main/java/structural/composite/CompositePattern.java)
   - Decorator
     - [Boeing 747 fitting example](src/main/java/structural/decorator/DecoratorPattern.java)
   - Facade
     - [Aircraft autopilot example](src/main/java/structural/facade/FacadePattern.java)
   - Flyweight
+    - [Aircraft ground radar example](src/main/java/structural/flyweight/FlyweightPattern.java)
   - Proxy
+    - [Drone controls example (remote proxy)](src/main/java/structural/proxy/ProxyPattern.java)
 - Behavioral patterns (control class interaction and responsibility)
   - Chain of Responsibility
   - Observer
@@ -49,6 +54,7 @@
   - Memento
   - State
   - Template
+    - [Aircraft pre-flight checklist example](src/main/java/behavioral/templatemethod/TemplateMethodPattern.java)
   - Strategy
     - [Sorting algorithms example](src/main/java/behavioral/strategy/StrategyPattern.java)
   - Visitor

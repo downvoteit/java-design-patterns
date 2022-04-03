@@ -19,7 +19,7 @@ package structural.decorator;
 // Implementations
 
 // Examples in JDK
-// 1. Java IO classes such as InputStream, FileInputStream, BufferedInputStream
+// 1. Java IO classes such as InputStream, FileInputStream, BufferedInputStream etc
 
 // 5. Client
 public class DecoratorPattern {

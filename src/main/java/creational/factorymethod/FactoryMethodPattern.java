@@ -26,6 +26,9 @@ package creational.factorymethod;
 // 2. java.util.ResourceBundle.getBundle()
 // 3. java.text.NumberFormat.getInstance()
 
+// Examples in Spring Framework
+// 1. Spring Bean injection into Spring IoC container (application context)
+
 import java.util.ArrayList;
 import java.util.List;
 
