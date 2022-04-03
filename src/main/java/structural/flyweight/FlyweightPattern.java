@@ -11,8 +11,8 @@ package structural.flyweight;
 // Components
 // 1. Flyweight
 // 2. Concrete Flyweight
-// (3. Unshared Concrete Flyweight)
-// (4. Flyweight Factory)
+// 3. Unshared Concrete Flyweight
+// 4. Flyweight Factory
 // 5. Client
 
 // Implementations
@@ -62,34 +62,22 @@ class Data { // common data shared among many objects
 
 // 2. Concrete Flyweight
 class F16 implements Aircraft {
-  private final String name;
+  private final String name; // other state
   private final Data data; // intrinsic state
   public F16(String name, Data data) {
     this.name = name;
     this.data = data;
   }
-  @Override
-  public double getTimeToDest(int currX, int currY, int destX, int destY, int currSpeed) { // extrinsic state
-    return Math.round(Math.random() * 10) + 1;
-  }
-  @Override
-  public String toString() {
-    return "" + name;
-  }
+  @Override public double getTimeToDest(int currX, int currY, int destX, int destY, int currSpeed) { return Math.round(Math.random() * 10) + 1; } // extrinsic state
+  @Override public String toString() { return "" + name; }
 }
 
 // 3. Unshared Concrete Flyweight
 class F16Unshared implements Aircraft {
-  private final String name;
+  private final String name; // other state
   public F16Unshared(String name) { this.name = name; }
-  @Override
-  public double getTimeToDest(int currX, int currY, int destX, int destY, int currSpeed) { // extrinsic state
-    return Math.round(Math.random() * 10) + 1;
-  }
-  @Override
-  public String toString() {
-    return "" + name.replace("-unshared", "");
-  }
+  @Override public double getTimeToDest(int currX, int currY, int destX, int destY, int currSpeed) { return Math.round(Math.random() * 10) + 1; } // extrinsic state
+  @Override public String toString() { return "" + name.replace("-unshared", ""); }
 }
 
 // 4. Flyweight Factor
