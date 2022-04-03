@@ -4,8 +4,8 @@ package structural.adapter;
 
 // Details
 // 1. Allows to bridge incompatible types
-// 2. Utilizes composition and an abstraction when designing the adapter
-// 3. Comprised of Object (i.e. composition) and Class (i.e. multiple class inheritance) adapter types
+// 2. Comprised of Object (i.e. composition) and Class (i.e. multiple class inheritance) adapter types
+// 3. Object adapter utilizes composition and an abstraction when designing the adapter
 // 4. Class adapter extends both the target type and the adaptee
 // 5. Class adapter can override or add new methods
 
