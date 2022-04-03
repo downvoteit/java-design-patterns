@@ -1,9 +1,12 @@
 package behavioral.observer.pull;
 
-// Observer pattern - Pull model
-
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Observer pattern - Pull model
+ *
+ */
 
 // 5. Client
 public class ObserverPattern {

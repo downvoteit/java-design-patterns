@@ -1,28 +1,31 @@
 package structural.flyweight;
 
-// Flyweight pattern
-
-// Details
-// 1. Allows the sharing of state among a large number of fine-grained object for efficiency
-// 2. Facilitates the separation of states into intrinsic (shared/immutable context) and extrinsic (mutable context) sections
-// 3. Reduces the number of objects and the memory usage of the program through partitioning and updating only the mutable part
-// 4. In other words breaks up a single heavyweight object into two (or more) flyweight objects
-
-// Components
-// 1. Flyweight
-// 2. Concrete Flyweight
-// 3. Unshared Concrete Flyweight
-// 4. Flyweight Factory
-// 5. Client
-
-// Implementations
-
-// Examples in JDK
-// 1. java.lang.Boolean.valueOf
-// 2. java.lang.Integer.valueOf
-
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * Flyweight pattern
+ *
+ * Details
+ * 1. Allows the sharing of state among a large number of fine-grained object for efficiency
+ * 2. Facilitates the separation of states into intrinsic (shared/immutable context) and extrinsic (mutable context) sections
+ * 3. Reduces the number of objects and the memory usage of the program through partitioning and updating only the mutable part
+ * 4. In other words breaks up a single heavyweight object into two (or more) flyweight objects
+ *
+ * Components
+ * 1. Flyweight
+ * 2. Concrete Flyweight
+ * 3. Unshared Concrete Flyweight
+ * 4. Flyweight Factory
+ * 5. Client
+ *
+ * Implementations
+ *
+ * Examples in JDK
+ * 1. java.lang.Boolean.valueOf
+ * 2. java.lang.Integer.valueOf
+ *
+ */
 
 // 5. Client
 public class FlyweightPattern {

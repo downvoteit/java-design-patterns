@@ -1,27 +1,30 @@
 package creational.builder;
 
-// Builder pattern
-
-// Details
-// 1. Creates a new object in multiple steps (abstract factory creates in one go)
-// 2. Hides and decouples object creation from its representation
-// 3. Allows to reuse the same construction process
-// 4. Antidote for telescoping constructors
-
-// Components
-// 1. Builder (build())
-// 2. Concrete Builder (build(), getResult())
-// 3. Director (construct())
-// 4. Product (construct())
-
-// Implementations
-// 1. With a director
-// 2. Without a director
-
-// Examples in JDK
-// 1. java.lang.StringBuilder
-// 2. java.util.stream.Stream
-// 3. java.util.Locale
+/**
+ * Builder pattern
+ *
+ * Details
+ * 1. Creates a new object in multiple steps (abstract factory creates in one go)
+ * 2. Hides and decouples object creation from its representation
+ * 3. Allows to reuse the same construction process
+ * 4. Antidote for telescoping constructors
+ *
+ * Components
+ * 1. Builder (build())
+ * 2. Concrete Builder (build(), getResult())
+ * 3. Director (construct())
+ * 4. Product (construct())
+ *
+ * Implementations
+ * 1. With a director
+ * 2. Without a director
+ *
+ * Examples in JDK
+ * 1. java.lang.StringBuilder
+ * 2. java.util.stream.Stream
+ * 3. java.util.Locale
+ *
+ */
 
 // 4. Product
 public class BuilderPattern {

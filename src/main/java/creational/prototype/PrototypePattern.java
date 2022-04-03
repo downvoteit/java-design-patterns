@@ -1,27 +1,29 @@
 package creational.prototype;
 
-// Prototype pattern
-
-// Details
-// 1. Creates a new object by copying an existing
-// 2. Less expensive than creating a new object
-// 3. When a class constructor is inaccessible can request a clone from the manager
-// 4. Reduces the number of classes by cloning with different values from the model
-// 5. Cloning can be shallow (some value sharing) or deep (no value sharing)
-// 6. Prone to circular dependency
-
-// Components
-// 1. Prototype (clone())
-// 2. Concrete Prototype (clone())
-// 3. Variables (subclasses/subtypes)
-// 4. Client (set())
-
-// Implementations
-// 1. Shallow copy clone method
-// 2. Deep copy clone method
-
-// Examples in JDK
-// 1. java.lang.Cloneable
+/**
+ * Prototype pattern
+ *
+ * Details
+ * 1. Creates a new object by copying an existing
+ * 2. Less expensive than creating a new object
+ * 3. When a class constructor is inaccessible can request a clone from the manager
+ * 4. Reduces the number of classes by cloning with different values from the model
+ * 5. Cloning can be shallow (some value sharing) or deep (no value sharing)
+ * 6. Prone to circular dependency
+ *
+ * Components
+ * 1. Prototype (clone())
+ * 2. Concrete Prototype (clone())
+ * 3. Variables (subclasses/subtypes)
+ * 4. Client (set())
+ *
+ * Implementations
+ * 1. Shallow copy clone method
+ * 2. Deep copy clone method
+ *
+ * Examples in JDK
+ * 1. java.lang.Cloneable
+ */
 
 // 4. Client
 public class PrototypePattern {

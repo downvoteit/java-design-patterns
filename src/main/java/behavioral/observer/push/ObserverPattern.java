@@ -1,31 +1,34 @@
 package behavioral.observer.push;
 
-// Observer pattern - Push model
-
-// Details
-// 1. One-to-many relationship model that is used to update the state (notify) all dependent objects
-// 2. Facilitates loose-coupling through abstractions
-// 3. Can be implemented using either push or pull model
-// 4. In case of many subjects and few observers storing subject separately can be expensive
-// 5. Clients can potentially overwhelm the observers with many small updates thus may require batching the incoming changes
-// 6. Change Manager is often added in between the subject and the observer in case of complex dependencies between the two
-
-// Components
-// 1. Subject
-// 2. Observer
-// 3. Concrete Subject
-// 4. Concrete Observer
-// 5. Client
-
-// Implementations
-// 1. Push model (top-down, push from the subject to the observer)
-// 2. Pull model (bottom-up, pull from the subject to the observer)
-
-// Examples in JDK
-// 1. java.util.EventListener
-
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Observer pattern - Push model
+ *
+ * Details
+ * 1. One-to-many relationship model that is used to update the state (notify) all dependent objects
+ * 2. Facilitates loose-coupling through abstractions
+ * 3. Can be implemented using either push or pull model
+ * 4. In case of many subjects and few observers storing subject separately can be expensive
+ * 5. Clients can potentially overwhelm the observers with many small updates thus may require batching the incoming changes
+ * 6. Change Manager is often added in between the subject and the observer in case of complex dependencies between the two
+ *
+ * Components
+ * 1. Subject
+ * 2. Observer
+ * 3. Concrete Subject
+ * 4. Concrete Observer
+ * 5. Client
+ *
+ * Implementations
+ * 1. Push model (top-down, push from the subject to the observer)
+ * 2. Pull model (bottom-up, pull from the subject to the observer)
+ *
+ * Examples in JDK
+ * 1. java.util.EventListener
+ *
+ */
 
 // 5. Client
 public class ObserverPattern {

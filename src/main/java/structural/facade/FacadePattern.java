@@ -1,27 +1,30 @@
 package structural.facade;
 
-// Facade pattern
-
-// Details
-// 1. Simplifies the creation of multiple subsystems
-// 2. Makes the management of multiple subsystems easier
-// 3. Can enforce calling different subsystems in the right order
-// 4. Shields the client from having to deal with complex classes
-// 5. Facilitates loose coupling between subsystems and the client
-// 6. Can provide translation between the various subsystems and the client
-
-// Components
-// 1. Facade
-// 2. Subsystem classes
-// 3. Client
-
-// Implementations
-// 1. Singleton
-// 2. Factor method for the subsystems
-
-// Examples in JDK
-// 1. javax.faces.context.FacesContext
-// 2. javax.faces.context.ExternalContext
+/**
+ * Facade pattern
+ *
+ * Details
+ * 1. Simplifies the creation of multiple subsystems
+ * 2. Makes the management of multiple subsystems easier
+ * 3. Can enforce calling different subsystems in the right order
+ * 4. Shields the client from having to deal with complex classes
+ * 5. Facilitates loose coupling between subsystems and the client
+ * 6. Can provide translation between the various subsystems and the client
+ *
+ * Components
+ * 1. Facade
+ * 2. Subsystem classes
+ * 3. Client
+ *
+ * Implementations
+ * 1. Singleton
+ * 2. Factor method for the subsystems
+ *
+ * Examples in JDK
+ * 1. javax.faces.context.FacesContext
+ * 2. javax.faces.context.ExternalContext
+ *
+ */
 
 // 3. Client
 public class FacadePattern {
@@ -40,20 +43,20 @@ public class FacadePattern {
 
 // 2. Subsystem classes
 class AltitudeMonitor {
-  public void autoMonitor() {};
-  public void disable() {};
+  public void autoMonitor() {}
+  public void disable() {}
 }
 
 class EngineController {
-  public void setEngineSpeed(long speed) {};
-  public void disable() {};
+  public void setEngineSpeed(long speed) {}
+  public void disable() {}
 }
 
 class FuelMonitor {}
 
 class NavigationSystem {
-  public void setDirectionBasedOnSpeedAndFuel(AltitudeMonitor altitudeMonitor, FuelMonitor fuelMonitor, EngineController engineController) {};
-  public void disable() {};
+  public void setDirectionBasedOnSpeedAndFuel(AltitudeMonitor altitudeMonitor, FuelMonitor fuelMonitor, EngineController engineController) {}
+  public void disable() {}
 }
 
 // 1. Facade

@@ -1,25 +1,27 @@
 package structural.decorator;
 
-// Decorator pattern
-
-// Details
-// 1. Dynamically enhance or extend behaviour of an object by wrapping it into another related object
-// 2. Is an alternative to subclassing
-// 3. Adds new behaviour either before or after the invocation of wrapper methods
-// x. Can lead to many decorator classes
-// x. Tight coupling/reference with a particular decorator class can be lost after wrapping
-
-// Components
-// 1. Component
-// 2. Concrete Component
-// 3. Decorator
-// 4. Concrete Decorator
-// 5. Client
-
-// Implementations
-
-// Examples in JDK
-// 1. Java IO classes such as InputStream, FileInputStream, BufferedInputStream etc
+/**
+ * Decorator pattern
+ *
+ * Details
+ * 1. Dynamically enhance or extend behaviour of an object by wrapping it into another related object
+ * 2. Is an alternative to subclassing
+ * 3. Adds new behaviour either before or after the invocation of wrapper methods
+ * 4. Can lead to many decorator classes
+ * 5. Tight coupling/reference with a particular decorator class can be lost after wrapping
+ *
+ * Components
+ * 1. Component
+ * 2. Concrete Component
+ * 3. Decorator
+ * 4. Concrete Decorator
+ * 5. Client
+ *
+ * Implementations
+ *
+ * Examples in JDK
+ * 1. Java IO classes such as InputStream, FileInputStream, BufferedInputStream etc
+ */
 
 // 5. Client
 public class DecoratorPattern {

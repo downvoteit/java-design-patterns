@@ -1,36 +1,39 @@
 package creational.factorymethod;
 
-// Factory Method pattern
-
-// Details
-// 1. Provides interface for object creation but delegates actual instantiation to subclasses
-// 2. Facilitates coding by abstraction and loose coupling
-// 3. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
-// 4. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
-// 5. Creation of the right object is the responsibility of the subclasses
-// 6. Can produce varying products through inheritance as opposed to the simple factory
-// 7. Prone to producing too many subclasses with minor differences
-// 8. Superclass downcast can cause ClassCastException in runtime
-
-// Components
-// 1. Creator (factoryMethod())
-// 2. Concrete Creator (factoryMethod())
-// 3. Product
-// 4. Concrete Product
-
-// Implementations
-// 1. Extend the superclass and update fields
-
-// Examples in JDK
-// 1. java.util.Calendar.getInstance()
-// 2. java.util.ResourceBundle.getBundle()
-// 3. java.text.NumberFormat.getInstance()
-
-// Examples in Spring Framework
-// 1. Spring Bean injection into Spring IoC container (application context)
-
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Factory Method pattern
+ *
+ * Details
+ * 1. Provides interface for object creation but delegates actual instantiation to subclasses
+ * 2. Facilitates coding by abstraction and loose coupling
+ * 3. Allows dynamic binding in runtime to meet certain conditions (e.g. OS, Environment variable etc)
+ * 4. Superclass holds the general setup, implementing all methods or all except the creation methods (can be abstract)
+ * 5. Creation of the right object is the responsibility of the subclasses
+ * 6. Can produce varying products through inheritance as opposed to the simple factory
+ * 7. Prone to producing too many subclasses with minor differences
+ * 8. Superclass downcast can cause ClassCastException in runtime
+ *
+ * Components
+ * 1. Creator (factoryMethod())
+ * 2. Concrete Creator (factoryMethod())
+ * 3. Product
+ * 4. Concrete Product
+ *
+ * Implementations
+ * 1. Extend the superclass and update fields
+ *
+ * Examples in JDK
+ * 1. java.util.Calendar.getInstance()
+ * 2. java.util.ResourceBundle.getBundle()
+ * 3. java.text.NumberFormat.getInstance()
+ *
+ * Examples in Spring Framework
+ * 1. Spring Bean injection into Spring IoC container (application context)
+ *
+ */
 
 public class FactoryMethodPattern {
   public static void main(String[] args) {
