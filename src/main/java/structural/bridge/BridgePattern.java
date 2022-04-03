@@ -7,8 +7,8 @@ package structural.bridge;
 // 2. Abstraction here are not necessary meant to be abstract classes and/or interfaces
 // 3. Allows switching implementations in runtime (via composition) to avoid permanent binding
 // 4. Client can continue to work with the object of the abstraction layer without noticing any changes to the implementation layer classes
-// x. Often confused with the adapter pattern that is applied after the system has been designed
-// x. Is instead applied as part of the design process to decouple two layers
+// 5. Often confused with the adapter pattern that is applied after the system has been designed
+// 6. Is instead applied as part of the design process to decouple two layers
 
 // Components
 // 1. Abstraction

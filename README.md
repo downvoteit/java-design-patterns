@@ -26,11 +26,12 @@
     - [F16 engine substitution and simulation example](src/main/java/creational/abstractfactory/AbstractFactoryPattern.java)
 - Structural patterns (control class composition)
   - Adapter
-    - [Aircraft software (Aircraft to HotAirBalloon adapter) example](src/main/java/structural/adapter/AdapterPattern.java)
+    - [Aircraft to HotAirBalloon adapter example](src/main/java/structural/adapter/AdapterPattern.java)
   - Bridge
     - [Toyota car sales software example](src/main/java/structural/bridge/BridgePattern.java)
   - Composite
   - Decorator
+    - [Boeing 747 fitting example](src/main/java/structural/decorator/DecoratorPattern.java)
   - Facade
     - [Aircraft autopilot example](src/main/java/structural/facade/FacadePattern.java)
   - Flyweight
@@ -43,9 +44,15 @@
   - Interpreter
   - Command
   - Iterator
+    - [Aircraft and custom Java Iterator example](src/main/java/behavioral/iterator/IteratorPattern.java)
   - Mediator
   - Memento
   - State
   - Template
   - Strategy
+    - [Sorting algorithms example](src/main/java/behavioral/strategy/StrategyPattern.java)
   - Visitor
+
+## Additional information
+
+- Java files linted for most compaction
