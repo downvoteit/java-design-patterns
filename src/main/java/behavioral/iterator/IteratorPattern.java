@@ -21,7 +21,7 @@ import java.util.NoSuchElementException;
  *
  * Implementations
  * 1. External iterator (client asks for next element)
- * 2. Internal iterator (iterator traverses the internal aggregate/collection)
+ * 2. Internal iterator (client cannot access it directly; iterator traverses the internal aggregate/collection)
  *
  * Examples in JDK
  * 1. java.util.Iterator

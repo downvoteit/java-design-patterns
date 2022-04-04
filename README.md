@@ -32,7 +32,7 @@
   - Bridge
     - [Toyota car sales software example](src/main/java/structural/bridge/BridgePattern.java)
   - Composite
-    - [NATO Air force example](src/main/java/structural/composite/CompositePattern.java)
+    - [Number of personnel in NATO Air force example](src/main/java/structural/composite/CompositePattern.java)
   - Decorator
     - [Boeing 747 fitting example](src/main/java/structural/decorator/DecoratorPattern.java)
   - Facade
