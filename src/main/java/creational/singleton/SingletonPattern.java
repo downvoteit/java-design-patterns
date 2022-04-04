@@ -55,10 +55,10 @@ public class SingletonPattern {
 
 // Static field, private/protected constructor, static factory method
 class AirForceOneLazy {
-  private static AirForceOneLazy instance; // 1
-  private AirForceOneLazy() {} // 2
+  private static AirForceOneLazy instance; // 1. Static field
+  private AirForceOneLazy() {} // 2. Private/protected constructor
   public void fly() {}
-  public static AirForceOneLazy getInstance() { // 3
+  public static AirForceOneLazy getInstance() { // 3. Static factory method
     if (instance == null) instance = new AirForceOneLazy();
     return instance;
   }

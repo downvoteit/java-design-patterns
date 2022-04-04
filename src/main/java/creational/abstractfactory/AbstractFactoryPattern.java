@@ -126,13 +126,13 @@ interface AircraftFactory {
 // 2. Concrete Factory
 class F16AbstractFactory implements AircraftFactory {
   @Override public Engine createEngine() { return new F16Engine(); }
-  @Override  public Cockpit createCockpit() { return new F16Cockpit(); }
+  @Override public Cockpit createCockpit() { return new F16Cockpit(); }
   @Override public Wings createWings() { return new F16Wings(); }
 }
 
 class Boeing747AbstractFactory implements AircraftFactory {
   @Override public Engine createEngine() { return new F16Engine(); }
-  @Override  public Cockpit createCockpit() { return new F16Cockpit(); }
+  @Override public Cockpit createCockpit() { return new F16Cockpit(); }
   @Override public Wings createWings() { return new F16Wings(); }
 }
 

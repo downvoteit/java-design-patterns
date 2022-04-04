@@ -58,6 +58,7 @@
   - Strategy
     - [Sorting algorithms example](src/main/java/behavioral/strategy/StrategyPattern.java)
   - Visitor
+    - [Aircraft metrics collection example](src/main/java/behavioral/visitor/VisitorPattern.java)
 
 ## Additional information
 
