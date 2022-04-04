@@ -53,7 +53,7 @@
   - Mediator
   - Memento
   - State
-  - Template
+  - Template Method
     - [Aircraft pre-flight checklist example](src/main/java/behavioral/templatemethod/TemplateMethodPattern.java)
   - Strategy
     - [Sorting algorithms example](src/main/java/behavioral/strategy/StrategyPattern.java)
