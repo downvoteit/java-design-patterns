@@ -49,7 +49,7 @@
   - Interpreter
   - Command
   - Iterator
-    - [Aircraft and custom Java Iterator example](src/main/java/behavioral/iterator/IteratorPattern.java)
+    - [Aircraft and a custom Java Iterator example](src/main/java/behavioral/iterator/IteratorPattern.java)
   - Mediator
   - Memento
   - State
